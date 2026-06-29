@@ -8,9 +8,9 @@ def draw_base_image():
     image[:] = white
     pt1 = image.shape[0] // 5
     for i in range(1, 5):
-        cv2.line(image, ((pt1 * i), imaeg.shape[0]), ((pt1 * i), 0), 0, 1)
-        cv2.line(imaeg, (image.shape[0], (pt1 * i)), (0, (pt1 * i)), 0, 1)
-    return img
+        cv2.line(image, ((pt1 * i), image.shape[0]), ((pt1 * i), 0), 0, 1)
+        cv2.line(image, (image.shape[0], (pt1 * i)), (0, (pt1 * i)), 0, 1)
+    return image
 
 pos1 = [200, 200]
 pos2 = [300, 300]
